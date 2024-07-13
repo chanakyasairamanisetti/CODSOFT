@@ -1,0 +1,79 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(digital-7.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(85, 85, 85);
+}    
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcy{
+    background-color: rgb(51, 50, 54);
+    box-shadow: 0 0 3px white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 10px;    
+}
+.display{
+    background-color: black;
+    color: #fff;
+    font-family: myFirstFont;
+    font-size: 75px;
+
+}
+input{
+    font-size: 20px;
+    font-family: myFirstFont;
+    height: 80px;
+    width: 250px;
+    color: azure;
+    background-color: rgb(19, 19, 19);
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    
+}
+.button{
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+    position: relative;
+    font-size: 30px;
+    font-style: bold;
+    font-family: myFirstFont;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.operator{
+    color: whitesmoke;
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+    position: relative;
+    font-size: 30px;
+    font-style: bold;
+    font-family: myFirstFont;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(4, 19, 48);
+}
+.equal{
+    width: 140px;
+    height: 50px;
+    color: #000;
+    background: rgb(204, 235, 225);
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: myFirstFont;
+}

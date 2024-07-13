@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="cal.css">
+        <link rel="icon" href="calcy.png" type="image/icon type">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <form class="calcy">
+                <input type="text" class="display" name="display"><br>
+                
+                <input type="button" class="button" value="C" onclick="clearDisplay()"> 
+                <input type="button" class="operator" value="/" onclick="appendOperator('/')">
+                <input type="button" class="operator" value="*" onclick="appendOperator('*')">
+                <input type="button" class="operator" value="<" onclick="backspace()"><br>
+                
+                <input type="button" class="button" value="7" onclick="appendNumber(7)">
+                <input type="button" class="button" value="8" onclick="appendNumber(8)">
+                <input type="button" class="button" value="9" onclick="appendNumber(9)">
+                <input type="button" class="operator" value="-" onclick="appendOperator('-')"><br>
+                
+                <input type="button" class="button" value="4" onclick="appendNumber(4)">
+                <input type="button" class="button" value="5" onclick="appendNumber(5)">
+                <input type="button" class="button" value="6" onclick="appendNumber(6)">
+                <input type="button" class="operator" value="+" onclick="appendOperator('+')"><br>
+                
+                <input type="button" class="button" value="1" onclick="appendNumber(1)">
+                <input type="button" class="button" value="2" onclick="appendNumber(2)">
+                <input type="button" class="button" value="3" onclick="appendNumber(3)">
+                <input type="button" class="operator" value="%" onclick="appendOperator('%')"><br>
+                
+                <input type="button" class="button" value="." onclick="appendDecimal()">
+                <input type="button" class="button" value="0" onclick="appendNumber(0)">
+                <input type="button" class="equal" value="=" onclick="calculate()"> <br>
+            </form>
+        </div>
+        <script src="calcy.js"></script>
+    </body>
+</html>
